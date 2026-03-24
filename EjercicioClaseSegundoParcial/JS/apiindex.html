@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="cargar()">
+
+    <script>
+        async function cargar(){
+            const result = await fetch("https://rickandmortyapi.com/api/character").
+            then(response => response.json());
+
+            const personajes = result.results;
+
+            for(let i = 0; i < personajes.length; i++){
+                console.log(personajes[i]);
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
