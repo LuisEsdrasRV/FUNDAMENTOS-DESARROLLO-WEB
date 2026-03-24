@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Flex</title>
+
+
+    <style>
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: start;
+            height: 800px;
+            flex-wrap: nowrap;
+            gap: 5px;
+
+        }
+        
+        .elemento{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            font-size: larger;
+            text-align: center;
+            border : 1px solid black;
+            color: rgb(255, 255, 255);
+
+
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <div class ="contenedor">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento" style="flex-grow: 2;">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+           
+    </div>
+
+</body>
+
+</html>
