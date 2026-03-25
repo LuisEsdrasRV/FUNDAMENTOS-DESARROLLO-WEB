@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": "EXAMEN 1",
+    "public": "EXAMEN2",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }
